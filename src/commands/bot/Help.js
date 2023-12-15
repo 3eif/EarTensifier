@@ -48,7 +48,7 @@ module.exports = class Help extends Command {
 
         const embed = new EmbedBuilder()
             .setAuthor({ name: 'Commands', iconURL: client.user.displayAvatarURL() })
-            .setDescription(`A detailed list of commands can be found here: **[eartensifier.net](https://eartensifier.net/#commands)**.\nNeed more help? Join the support server here: **[${client.config.server.replace('https://', '')}](${client.config.server})**.`)
+            .setDescription(`A detailed list of commands can be found **[here](https://eartensifier.net/#commands)**.\nNeed more help? Join the **[support server](${client.config.server})**`)
             .setFooter({ text: 'For more information on a command: /help <command>' })
             .setColor(client.config.colors.default);
 
